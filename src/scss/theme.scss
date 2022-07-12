@@ -1,7 +1,2 @@
-@import "./components/banner.scss";
+@import "./css_lib/theme-variable.scss";
 @import "./css_lib/bootstrap.scss";
-body {
-    background-color: $white;
-    margin-top: $mt;
-    margin-bottom: $mt;
-}
