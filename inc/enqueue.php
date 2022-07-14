@@ -17,8 +17,6 @@ if ( ! function_exists( 'nh_scripts' ) ) {
 		wp_deregister_script('jquery');
 		wp_enqueue_script( 'jquery',get_template_directory_uri().'/dist/jquery.js', array(), $theme_version, true );
 
-		
-
 		wp_enqueue_script( 'main-script', get_template_directory_uri() . '/dist/js/theme.js', array('jquery' ), 1, true );
 		
 	
@@ -32,6 +30,7 @@ if ( ! function_exists( 'nh_scripts' ) ) {
 
 add_action( 'wp_enqueue_scripts', 'nh_scripts' );
 
+/*
 
 function nh_dashboard_enqueue($hook) {
 
@@ -46,3 +45,5 @@ function nh_dashboard_enqueue($hook) {
 }
 
 add_action('admin_enqueue_scripts', 'nh_dashboard_enqueue');
+
+*/

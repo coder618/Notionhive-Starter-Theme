@@ -11,23 +11,11 @@ defined('ABSPATH') || exit;
 
 define('THEMEROOT', get_stylesheet_directory_uri());
 define('IMG', THEMEROOT . '/dist/img');
-define('CSV_IMG', THEMEROOT . '/dist/csv-img');
-define('ICON', THEMEROOT . '/dist/icons');
 define('JS', THEMEROOT . '/dist/js');
 define('CSS', THEMEROOT . '/dist/css');
+
 define('DEFAULT_IMG', IMG . '/default-image.png');
-define('EA', THEMEROOT .  '/dist/email_assets');
 define('ISDEV', false);
-define('GMAP', 'AIzaSyC_Rj1szh9DyHkGM5EEAkC02ZPlTbFd6Gc');
-// define('GMAP', '');
-
-// Extra Tax list
-define('GO_TAX_LIST', [
-	// "go_page_template"		=> "Product Page Template",
-	// "go_type"				=> "Custom Product Type",
-	
-]);
-
 
 $prefix_includes = array(
 	'/setup.php',                           // Theme setup and custom theme supports.
@@ -37,7 +25,7 @@ $prefix_includes = array(
 	'/theme-settings-page.php',				// theme setting page , theme information 
 
 
-	'/register-gutenberg-verve-components.php',
+	'/register-components.php',
 	
 	'/cpt.php',
 	'/post-meta.php',
