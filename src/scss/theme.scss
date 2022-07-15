@@ -1,2 +1,13 @@
+// Loading CSS library
 @import "./css_lib/theme-variable.scss";
 @import "./css_lib/bootstrap.scss";
+
+// loading layout scss files
+@import "./layout/main-navigation.scss";
+@import "./layout/footer.scss";
+
+// Loading custom scss files
+@import "./util/global.scss";
+
+// loading components
+@import "./components/banner.scss";

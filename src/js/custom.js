@@ -1,2 +1,1 @@
-console.log("theme.js loaded");
-console.log("theme.js Yahoo");
+console.log("custom.js loaded");

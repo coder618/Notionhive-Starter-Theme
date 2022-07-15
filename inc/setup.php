@@ -29,8 +29,8 @@ if ( ! function_exists( 'wpmm_setup' ) ) {
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary_one' => __( 'Primary Menu', 'wpmm' ),
-			'footer_menu' => __( 'Footer Menu', 'wpmm' ),
+			'primary-menu' => __( 'Primary Menu', 'wpmm' ),
+			'footer-menu' => __( 'Footer Menu', 'wpmm' ),
 		) );
 
 		add_theme_support( 'custom-background', apply_filters( 'wpmm_custom_background_args', array(

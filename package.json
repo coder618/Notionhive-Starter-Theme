@@ -34,6 +34,7 @@
         }
     },
     "js_file_list": [
+        "./node_modules/bootstrap/dist/js/bootstrap.bundle.js",
         "./src/js/js_lib/magnific-popup.js",
         "./src/js/custom.js"
     ],
