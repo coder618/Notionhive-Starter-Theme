@@ -70,22 +70,3 @@ function nh_register_widget_area(){
 		]
 	);
 }
-
-
-// add custom script to body and before footer
-// function nm_add_body_script() {
-// 	$code = trim(  carbon_get_theme_option('nm_after_body_tag_script') );
-// 	if( $code ){
-// 		echo $code;
-// 	}
-// }
-// add_action( 'wp_body_open', 'nm_add_body_script' );
-
-// function nm_top_header_script() {
-// 	$code = trim(  carbon_get_theme_option('nm_high_header_scripts') );
-// 	if( $code ){
-// 		echo $code;
-// 	}
-// }
-// add_action( 'nm_top_header_scripts', 'nm_top_header_script' );
-

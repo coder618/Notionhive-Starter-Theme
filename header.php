@@ -27,9 +27,5 @@ defined('ABSPATH') || exit;
 <body <?php body_class(); ?> data-blog-id="<?php echo get_current_blog_id() ?>">
 	<?php do_action('wp_body_open'); ?>
 
-
-	<div class="overlay"></div>
-
 	<div class="site" id="page" data-post-id="<?php echo get_the_ID(  ) ?>">
-
 		<?php get_template_part("layout/main-navigation"); ?>

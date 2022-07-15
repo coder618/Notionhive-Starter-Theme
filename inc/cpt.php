@@ -20,7 +20,6 @@ function nm_register_post_type(){
     //     'hierarchical' => false,
     // ] );
 
-
 }
 
 

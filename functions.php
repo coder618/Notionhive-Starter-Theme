@@ -22,13 +22,10 @@ $prefix_includes = array(
 	'/enqueue.php',                         // Enqueue scripts and styles.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker.
 	'/useful-function.php',           		// Register Custom post type
-	'/theme-settings-page.php',				// theme setting page , theme information 
-
 
 	'/register-components.php',
 	
 	'/cpt.php',
-	'/post-meta.php',
 
 );
 
