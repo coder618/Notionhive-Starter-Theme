@@ -24,7 +24,6 @@ $prefix_includes = array(
 	'/useful-function.php',           		// Register Custom post type
 
 	'/register-components.php',
-	
 	'/cpt.php',
 
 );

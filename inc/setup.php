@@ -5,11 +5,11 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'after_setup_theme', 'nh_setup' );
+add_action( 'after_setup_theme', 'wpmm_setup' );
 
-if ( ! function_exists( 'nh_setup' ) ) {
+if ( ! function_exists( 'wpmm_setup' ) ) {
 	
-	function nh_setup() {
+	function wpmm_setup() {
 		load_theme_textdomain( 'nh', get_template_directory() . '/languages' );
 		add_theme_support( 'html5', [ 'gallery','caption',] );
 		add_theme_support( 'automatic-feed-links' );
@@ -29,36 +29,28 @@ if ( ! function_exists( 'nh_setup' ) ) {
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary_one' => __( 'Primary Menu', 'nh' ),
-			'footer_menu' => __( 'Footer Menu', 'nh' ),
+			'primary_one' => __( 'Primary Menu', 'wpmm' ),
+			'footer_menu' => __( 'Footer Menu', 'wpmm' ),
 		) );
 
-		add_theme_support( 'custom-background', apply_filters( 'nh_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'wpmm_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		)));
 
 	}
 }
- 
 
 // remove admin bar space because we want to put it bottom
-add_action('get_header', 'nh_remonm_admin_bar_space');
-function nh_remonm_admin_bar_space() {
+add_action('get_header', 'wpmm_remove_admin_bar_space');
+function wpmm_remove_admin_bar_space() {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
-// modify excerpt
-function nh_excerpt_modify( $excerpt ) {
-	return substr($excerpt, 0, 200) .'  ...';
-}
-add_filter( 'get_the_excerpt', 'nh_excerpt_modify' ); 
-
-
 
 /* Register Widget Area */
-add_action( 'widgets_init', 'nh_register_widget_area' );
-function nh_register_widget_area(){
+add_action( 'widgets_init', 'wpmm_register_widget_area' );
+function wpmm_register_widget_area(){
 	register_sidebar(
 		[
 			'name' 			=> 'Footer Widget Area',

@@ -1,19 +1,9 @@
 <?php defined('ABSPATH') || exit; ?>
-<?php 
-// carbon_get_theme_option("key")
-$office_address =  carbon_get_theme_option("nm_office_address");
-$tel =  carbon_get_theme_option("nm_tel");
-$email =  carbon_get_theme_option("nm_email");
-$privacy_policy_link =  carbon_get_theme_option("nm_privacy_policy_link");
 
-
-?>
     <footer>
 
         <div class="container">
 
-            <?php echo nh_get_social_links() ?>
-            
             <?php 
                 wp_nav_menu(
                     array(

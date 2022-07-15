@@ -1,0 +1,22 @@
+/*
+Theme Name: WP Minimal 
+Theme URI: https://coder618.github.io/wp-minimal
+Author: coder618
+Author URI: https://coder618.github.io
+Text Domain: wpmm
+Version: 1.00
+Tags: Multipage
+
+Resource Licenses:
+Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under fb BY 3.0.)
+and of course
+jQuery: https://jquery.org | (Code licensed under MIT)
+WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
+*/
+
+/*
+This file is just used to identify the theme in WordPress.
+The compiled CSS output can be found in dist/css/theme.css
+The SCSS sources for it can be found in src/scss/
+...and now go out and play!
+*/

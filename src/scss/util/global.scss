@@ -1,0 +1,14 @@
+// Set admin bar to bottom
+#wpadminbar {
+    top: unset;
+    bottom: 0;
+
+    &.mobile {
+        display: none !important;
+    }
+
+    .hover .ab-sub-wrapper,
+    #wpadminbar .quicklinks .menupop ul {
+        bottom: 28px;
+    }
+}
